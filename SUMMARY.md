@@ -6,3 +6,7 @@
 * [Domains](domains/README.md)
   * [Subdomain (.centox.io)](domains/subdomain-.centox.io.md)
   * [Custom domain](domains/custom-domain.md)
+
+## Additional Information
+
+* [Dashboard](https://app.centox.io)
