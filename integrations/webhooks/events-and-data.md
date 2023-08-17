@@ -2,7 +2,14 @@
 
 
 
-###
+## Type of events:
+
+* [#submission.commented](events-and-data.md#submission.commented "mention")
+* [#comment.replied](events-and-data.md#comment.replied "mention")
+* [#application.submitted](events-and-data.md#application.submitted "mention")
+* [#submission.status.updated](events-and-data.md#submission.status.updated "mention")
+
+***
 
 {% hint style="info" %}
 When someone replies to a comment, the event 'comment.replied' is fired instead of 'submission.commented'
@@ -13,8 +20,14 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
 {% code fullWidth="false" %}
 ```typescript
 {
-    projectId: string;
-    projectSlug: string;
+    event: 'application.commented'
+    project: {
+        id: string;
+        name: string;
+        slug: string;
+        language: string;
+        iconUrl: string;
+    };
     comment: {
         id: string;
         content: string;
@@ -55,8 +68,14 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
 
 ```typescript
 {
-    projectId: string;
-    projectSlug: string;
+    event: 'application.replied'
+    project: {
+        id: string;
+        name: string;
+        slug: string;
+        language: string;
+        iconUrl: string;
+    };
     comment: {
         id: string;
         content: string;
@@ -87,6 +106,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
     },
     submission: {
         id: string;
+        status: 'PENDING' | 'REJECTED' | 'APPROVED',
         user: {
             id: string;
             displayName: string;
@@ -110,8 +130,14 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
 
 ```typescript
 {
-    projectId: string;
-    projectSlug: string;
+    event: 'application.submitted'
+    project: {
+        id: string;
+        name: string;
+        slug: string;
+        language: string;
+        iconUrl: string;
+    }
     submission: {
         id: string;
         form: {
@@ -125,7 +151,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
             value: string;
         }[];
         createdAt: Date;
-    },
+    }
     user: {
         id: string;
         displayName: string;
@@ -139,3 +165,36 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
 }
 ```
 
+### submission.status.updated
+
+```typescript
+{
+    event: 'submission.status.updated'    
+    project: {
+        id: string;
+        name: string;
+        slug: string;
+        language: string;
+        iconUrl: string;
+    }
+    submission: {
+        id: string;
+        status: 'PENDING' | 'REJECTED' | 'APPROVED',
+        form: {
+            id: string;
+            title: string;
+            slug: string;
+        }
+        user: {
+            id: string;
+            displayName: string;
+            name: string;
+            avatarUrl: string;
+            loginProvidersIds: {
+                DISCORD: string;
+            }
+        }
+        createdAt: Date;
+    }
+}
+```
