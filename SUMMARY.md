@@ -6,6 +6,10 @@
 * [Domains](domains/README.md)
   * [Subdomain (.centox.io)](domains/subdomain-.centox.io.md)
   * [Custom domain](domains/custom-domain.md)
+* [Integrations](integrations/README.md)
+  * [Webhooks](integrations/webhooks/README.md)
+    * [Verifying request](integrations/webhooks/verifying-request.md)
+    * [Events & Data](integrations/webhooks/events-and-data.md)
 
 ## Additional Information
 
