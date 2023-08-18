@@ -1,7 +1,5 @@
 # Events & Data
 
-
-
 ## Type of events:
 
 * [#submission.commented](events-and-data.md#submission.commented "mention")
@@ -36,7 +34,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
             displayName: string;
             name: string;
             avatarUrl: string;
-            loginProviderIds: {
+            loginProvidersIds: {
                 DISCORD: string;
             }
         },
@@ -49,7 +47,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
             displayName: string;
             name: string;
             avatarUrl: string;
-            loginProviderIds: {
+            loginProvidersIds: {
                 DISCORD: string;
             }
         },
@@ -84,7 +82,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
             displayName: string;
             name: string;
             avatarUrl: string;
-            loginProviderIds: {
+            loginProvidersIds: {
                 DISCORD: string;
             }
         },
@@ -96,7 +94,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
                 displayName: string;
                 name: string;
                 avatarUrl: string;
-                loginProviderIds: {
+                loginProvidersIds: {
                     DISCORD: string;
                 }
             },
@@ -112,7 +110,7 @@ When someone replies to a comment, the event 'comment.replied' is fired instead 
             displayName: string;
             name: string;
             avatarUrl: string;
-            loginProviderIds: {
+            loginProvidersIds: {
                 DISCORD: string;
             }
         },
