@@ -17,8 +17,6 @@ Give your discord-bot a appropriate name & and add a logo.
 
 Follow <mark style="color:blue;">**Step 2**</mark> - for adding a correct **url-redirict** link for your application.&#x20;
 
-
-
 </details>
 
 <details>
@@ -56,7 +54,19 @@ Follow <mark style="color:blue;">**Step 3**</mark> - on how to insert your Disco
 
 The next **step** is to copy information from your **Discord bot** into your project on <mark style="color:blue;">Centox.</mark>
 
+Copy the **"Client ID"** & **"Client Secret"** into your project on Centox. Both of these pieces of information can be found under the "OAuth2" category of your discord bot.
 
+<img src="../.gitbook/assets/4-done.png" alt="" data-size="original">\
+
+
+To copy them into your Centox project, you need to access the admin page for your project. \
+And go to **Settings** -> **General** -> **Enable Provider**
+
+![](../.gitbook/assets/5-done.jpg)
+
+**Once you have successfully copied them in, make sure to click "Enable Provider"**\
+\
+Follow <mark style="color:blue;">**Step 4**</mark> - on how to check if your bot **works** when users try to **log in**.
 
 </details>
 
